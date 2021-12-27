@@ -1,0 +1,2 @@
+build/sankoff --cost tests/data/cost-dup-row-1.txt --aln tests/data/aln1.txt --tree tests/data/tree1.txt
+build/sankoff --cost tests/data/cost-row-col-diff-1.txt --aln tests/data/aln1.txt --tree tests/data/tree1.txt
