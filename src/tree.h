@@ -390,18 +390,12 @@ struct NodePrinterAbstractClass {
 		if (n.label != "" && (print_internal_node_labels || (n.isLeaf()))) {
 			os << n.label;
 		}
-		if (allow_print_annotation && (n.annotation != "" || (n.location != NODE::StateType::unknown && force_print_location) /*|| sankoff_value[0] > -1*/)) {
+		if (allow_print_annotation && (n.annotation != "" /*|| sankoff_value[0] > -1*/)) {
 			os << "[&";
-			bool empty = true;
+			// bool empty = true;
 			if (n.annotation != "") {
 				os << n.annotation;
-				empty = false;
-			}
-			if (n.location != NODE::StateType::unknown && force_print_location) {
-				if (!empty)
-					os << ",";
-				os << "location=" << n.location;
-				empty = false;
+				// empty = false;
 			}
 			//os << "," << "s=" << sankoff_value[0] << "|" << sankoff_value[1];
 			os << "]";
