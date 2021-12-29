@@ -1,3 +1,4 @@
 .vscode
 build/*
 tests/out
+**/.DS_Store

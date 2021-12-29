@@ -1,5 +1,5 @@
 #include "tree.h"
-#include "GetPot.cpp"
+#include <array>
 
 template<typename Value>
 class blocked_range {
@@ -36,6 +36,8 @@ void parallel_for(const blocked_range<V>& r, const F& f) {
 }
 
 #include "sankoff.h"
+
+#include "GetPot.cpp"
 
 int main(int argc, char* argv[]) {
 
