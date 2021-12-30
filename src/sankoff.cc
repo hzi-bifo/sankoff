@@ -26,7 +26,8 @@ int main(int argc, char* argv[]) {
 	    ("omit-leaf-mutations", "omit mutations happen at leaf nodes")
 	    ("nthread", po::value<int>()->default_value(oneapi::tbb::this_task_arena::max_concurrency()), "change number of default threads")
 	    ("induce_tree_over_samples", po::value<bool>()->default_value(true), "remove nodes not in the alignment")
-	    ("asf", po::value<string>(), "print sequences of ancestral and leaf nodes to this file.")
+	    ("out-as", po::value<string>(), "print sequences of ancestral and leaf nodes to this file.")
+	    ("out-tree", po::value<string>(), "The tree to this file. Some times it is useful, for example when to internal nodes of the input tree no label is assigned.")
 	    ("ilabel", po::value<string>()->default_value("inode"), "Assign label to internal nodes. The argument is the prefix.")
 	;
 
