@@ -5,6 +5,7 @@ Sankoff is a fast and parallel implementation for ancestral state reconstruction
 
 # Installation
 **Conda installation (Linux and Mac):**
+(Generated based on README from [CRISPRme(https://github.com/samuelecancellieri/CRISPRme)])
 - Open a terminal window
 - Paste this command into the terminal:
     ```
