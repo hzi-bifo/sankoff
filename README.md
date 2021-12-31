@@ -1,4 +1,6 @@
 # sankoff
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/sankoff/README.html)
+
 Sankoff is a fast and parallel implementation for ancestral state reconstruction based on Sankoff's algorithm.
 
 # Installation
