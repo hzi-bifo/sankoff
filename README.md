@@ -49,17 +49,18 @@ If internal nodes are unnamed, option `--ilabel [PREFIX]` could be used which as
   - Download input phylogeny from [tree1.txt](https://raw.githubusercontent.com/hzi-bifo/sankoff/main/tests/data/tree1.txt) and save as cost-1.txt
   - Run 
 ```
-    sankoff --tree tree1.txt --aln aln.txt --cost cost-1.txt --ilabel inode --out-as aln-out.txt --out-tree tree-out.txt
+sankoff --tree tree1.txt --aln aln.txt --cost cost-1.txt --ilabel inode --out-as aln-out.txt --out-tree tree-out.txt
 ```
   - Internal nodes of the input tree is now labled and the tree is saved in `tree-out.txt`.
   - Sequence infered for internal nodes as well as sequence for leaf nodes are saved in `aln-out.txt`.
 
 # Options
-  * `--nthread [THREAD-COUNT]`: use `THREAD-COUNT` threads for execution.
-  * `--tree [TREE-FILE]`
-  * `--aln [INPUT-SEQUENCE-FILE]`
-  * `--cost [COST-MATRIX-FILE]`
-  * `--out-as [ANCESTRAL-STATE-OUTPUT-FILE]`
-  * `--ilabel [PREFIX]`
-  * `--out-tree [OUT-TREE]`
+  * `--nthread [THREAD-COUNT]`: Use `THREAD-COUNT` threads for execution.
+  * `--tree [TREE-FILE]`: Input phylogeny in the plain tree format.
+  * `--nexus [TREE-FILE]`: Input phylogeny in the nexus format.
+  * `--aln [INPUT-SEQUENCE-FILE]`: Input sequences for leaf nodes.
+  * `--cost [COST-MATRIX-FILE]`: File containing the cost matrix. First row and first column represent characters in the sequence files. Values are integer.
+  * `--out-as [ANCESTRAL-STATE-OUTPUT-FILE]`: Output file containing all the sequences for internal nodes as well as leaf nodes.
+  * `--ilabel [PREFIX]`: If present, internal nodes are labeled with `[PREFIX]#NUM` where `#NUM` will be different values.
+  * `--out-tree [OUT-TREE]`: The phylogeny, potentially after labeling, will be saved in this file.
   
