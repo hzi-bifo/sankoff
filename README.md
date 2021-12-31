@@ -64,3 +64,9 @@ sankoff --tree tree1.txt --aln aln.txt --cost cost-1.txt --ilabel inode --out-as
   * `--ilabel [PREFIX]`: If present, internal nodes are labeled with `[PREFIX]#NUM` where `#NUM` will be different values.
   * `--out-tree [OUT-TREE]`: The phylogeny, potentially after labeling, will be saved in this file.
   
+# Contributors
+  * Mohammad-Hadi Foroughmand-Araabi
+  * Sama Goliaei
+
+# License
+This project is under GPL 3.0 license.
