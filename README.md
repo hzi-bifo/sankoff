@@ -60,9 +60,12 @@ sankoff --tree tree1.txt --aln aln.txt --cost cost-1.txt --ilabel inode --out-as
   * `--nexus [TREE-FILE]`: Input phylogeny in the nexus format.
   * `--aln [INPUT-SEQUENCE-FILE]`: Input sequences for leaf nodes.
   * `--cost [COST-MATRIX-FILE]`: File containing the cost matrix. First row and first column represent characters in the sequence files. Values are integer.
+  * `--cost-identity-aa [identical] [non-identical] [X-AA] [X-X] [X-GAP] [AA-GAP] [GAP-GAP]`: Instead of cost matrix, this option may be used. This option builds a cost matrix for amino acids with two special characters: gap (`-`) and unknown (`X`). The matrix is filled with the parameters given to this option.
+  * `--cost-identity-dna [identical] [non-identical] [X-NA] [X-X] [X-GAP] [NA-GAP] [GAP-GAP]`: Instead of cost matrix, this option may be used. This option builds a cost matrix for DNA with two special characters: gap (`-`) and unknown (`X`). The matrix is filled with the parameters given to this option.
   * `--out-as [ANCESTRAL-STATE-OUTPUT-FILE]`: Output file containing all the sequences for internal nodes as well as leaf nodes.
   * `--ilabel [PREFIX]`: If present, internal nodes are labeled with `[PREFIX]#NUM` where `#NUM` will be different values.
   * `--out-tree [OUT-TREE]`: The phylogeny, potentially after labeling, will be saved in this file.
+  * `--induce_tree_over_samples`: Remove samples from the tree which are not present in the sequence file and rebuild the tree.
   
 # Contributors
   * Mohammad-Hadi Foroughmand-Araabi
