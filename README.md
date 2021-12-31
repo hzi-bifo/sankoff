@@ -44,7 +44,15 @@ Sankoff with the above parameters reads the tree from `TREE-FILE` and leaf node 
 If internal nodes are unnamed, option `--ilabel [PREFIX]` could be used which assigns label to internal nodes with prefix `PREFIX`. Then the tree with new names could be saved with option `--out-tree [OUT-TREE]` in file `OUT-TREE`.
 
 ## Example
-* TODO: download files and how to execute.
+  - Download leaf node sequences from [aln.txt](https://raw.githubusercontent.com/hzi-bifo/sankoff/main/tests/data/aln1.txt) and save as aln1.txt
+  - Download cost matrix from [cost-1.txt](https://raw.githubusercontent.com/hzi-bifo/sankoff/main/tests/data/cost-1.txt) and save as cost-1.txt
+  - Download input phylogeny from [tree1.txt](https://raw.githubusercontent.com/hzi-bifo/sankoff/main/tests/data/tree1.txt) and save as cost-1.txt
+  - Run 
+```
+    sankoff --tree tree1.txt --aln aln.txt --cost cost-1.txt --ilabel inode --out-as aln-out.txt --out-tree tree-out.txt
+```
+  - Internal nodes of the input tree is now labled and the tree is saved in `tree-out.txt`.
+  - Sequence infered for internal nodes as well as sequence for leaf nodes are saved in `aln-out.txt`.
 
 # Options
   * `--nthread [THREAD-COUNT]`: use `THREAD-COUNT` threads for execution.
